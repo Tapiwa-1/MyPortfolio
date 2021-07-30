@@ -43,25 +43,186 @@
   .nav-links a:active,
   .nav-links a:hover {
     border-bottom: tomato solid 3px;
+    transition-timing-function: ease;
   }
   .container {
     display: block;
     width: 90%;
     margin: 0 auto ;
+    align-items: center;
+   
     
   }
-  .columuns {
+   .columuns {
     display: flex;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
+    
+   
   }
   img{
     width: 100%;
   }
+  
+  .col-25{
+    width: 25%;
+    margin: 5px;
+    
+  }
   .col-50{
     width: 50%;
   }
+  .col-75{
+    width: 75%;
+    
+  }
+  .col-100{
+    width: 100%;
+  }
+  /*********HOME PAGE***********/
+  /*********Portfolio***********/
+  .project
+  {
+    width: 100%;
+    display: block;
+    padding: 3px;
+    border: #5b78c7 3px solid;
+  }
+  .button
+  {
+    margin: 20px auto ;
+    width: 150px;
+    align-items: center;
+    
+  }
+  .project a:hover  {
+   background-color: #5b78c7;
+  }
+  .button a {
+    color: #5b78c7;
+    text-decoration: none;
+    padding: 15px 20px;
+  }
+  .button a:focus,
+  .button a:hover{
+    background-color: #5b78c7;
+    color: white;
+  }
+  /**********BLOG******************/
+  .blog-bar{
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: tomato 2px dotted;
+  }
+
+  .blog-bar a{
+    width: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 30px 20px;
+  }
+  .blog-bar a:focus,
+  .blog-bar a:hover{
+    background-color: #5b78c7;
+    color: tomato;
+    
+  }
+  .blog-bar p{
+    text-align: right;
+    width: 100%;
+  }
+  
+ /***********ABOUT****************/
+  .hidden {
+   display: none;
+ }
+ .skill-container
+ {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+  
+   
+ }
+ .outer-bar{
+  width: 100%;
+  height: 10px;
+  background-color: #5b78c7;
+  margin-bottom: 3px;
+}
+.inner-bar {
+  height: 10px;
+  background-color: tomato;
+  margin-bottom: 3px;
+}
+.ps {
+  width: 98%;
+}
+.pr {
+  width: 96%;
+}
+.af{
+  width: 76%;
+}
+.dw{
+  width: 86%;
+}
+.html{
+  width: 99%;
+}
+.css{
+  width: 94%;
+}
+.js{
+  width: 92%;
+}
+.php{
+  width: 82%;
+}
+.cpp{
+  width: 96%;
+}
+.c-s{
+  width: 96%;
+}
+.py{
+  width: 88%;
+}
+.mysql {
+  width: 92%;
+}
+.ds{
+  width: 72%;
+}
+ .skill-container p {
+   text-align: right;
+ }
+ 
+  
   @media screen and (max-width: 768px) {
+    .columuns{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+    
+    }
+    .hidden  {
+      display: block;
+    }
+    .col-25,
+    .col-50,
+    .col-75,
+    .col-100{
+      width: 100%;
+      
+    }
+    .visible {
+      display: none;
+    }
+    
     .line {
       width: 30px;
       height: 3px;
@@ -92,7 +253,7 @@
       width: 100%;
       flex-direction: column;
       clip-path: circle(100px at 90% -10%);
-      -webkit-clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(10px at 90% -10%);
       transition: all 1s ease-out;
       pointer-events: none;
     }
