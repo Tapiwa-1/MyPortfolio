@@ -192,10 +192,10 @@
    margin-top: 20px;
    
  }
- .edu img{
+ .icon{
   margin-left: 20%;
-   width: 50px ;
-   height: 50px;
+   width: 30px ;
+   height: 30px;
    margin-bottom: auto;
  }
  .edu span,
@@ -211,6 +211,19 @@
    flex-direction: column;
   
    
+ }
+ .skill-container .header{
+   display: flex;
+   align-items: center;
+   
+ }
+ .skill-container .icon{
+   margin-bottom: 5px;
+  margin-left: auto;
+  
+ }
+ .skill-container h4 {
+  width: 100%;
  }
  .outer-bar{
   width: 100%;
@@ -264,6 +277,29 @@
 }
  .skill-container p {
    text-align: right;
+ }
+ .social-media{
+   display: flex;
+   flex-direction: column;
+ }
+ .social-block{
+   display: flex;
+   margin-top: auto;
+   margin-bottom: auto;
+   border: black 2px solid;
+   
+ }
+ .social-block a{
+  margin-top: auto;
+  margin-bottom: auto;
+  text-decoration: none;
+  color: black;
+  border: black 2px solid;
+  width: 50%;
+  margin-left: auto;
+ }
+ .social-block .icon-w{
+   margin-left: auto;
  }
  
   
